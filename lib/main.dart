@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 
-import 'home_page.dart';
+import 'splashScreen.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home: const SplashScreen(),
         theme: ThemeData(primarySwatch: Colors.yellow));
   }
 }
